@@ -1,0 +1,48 @@
+{
+    "version": "1.5.0-alpha",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./Application.ts",
+        "./Connection.ts",
+        "./Cycle.ts",
+        "./Manager.ts",
+        "./Util.ts",
+        "./_index.ts",
+        "./data/JSO.ts",
+        "./data/ObjectMap.ts",
+        "./data/Randy.ts",
+        "./data/TemporalCache.ts",
+        "./data/_index.ts",
+        "./model/IAcceleration.ts",
+        "./model/IClientSession.ts",
+        "./model/IGeoCoords.ts",
+        "./model/IGroupModel.ts",
+        "./model/ILocation.ts",
+        "./model/IPublicSession.ts",
+        "./model/IRotation.ts",
+        "./model/IServerSession.ts",
+        "./model/_index.ts",
+        "./tracking/ITrackerSubscription.ts",
+        "./tracking/ITrackerSubscriptionInfo.ts",
+        "./tracking/Tracker.ts",
+        "./tracking/TrackerClient.ts",
+        "./tracking/TrackerServer.ts",
+        "./tracking/_index.ts",
+        "./training/Trainee.ts",
+        "./training/Trainer.ts",
+        "./training/_index.ts"
+    ]
+}

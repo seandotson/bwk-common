@@ -1,0 +1,23 @@
+{
+  "name": "bwk-common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seandotson/bwk-common.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seandotson/bwk-common/issues"
+  },
+  "homepage": "https://github.com/seandotson/bwk-common#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-typescript": "^0.6.2"
+  }
+}

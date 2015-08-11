@@ -1,4 +1,4 @@
-module common.tracking {
+module bwk.common.tracking {
   export class TrackerClient<T> {
 
     connection: common.Connection;

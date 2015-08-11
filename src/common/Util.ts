@@ -1,4 +1,4 @@
-
+module bwk.common {
 class Util {
 
   static arrayify(item: Object, keyProp: string): Array<Object> {
@@ -47,4 +47,5 @@ class Util {
     return o1;
   }
 
+}
 }

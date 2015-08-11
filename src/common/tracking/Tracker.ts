@@ -1,6 +1,6 @@
 
 
-module common.tracking {
+module bwk.common.tracking {
 
 
   export class Tracker {

@@ -1,4 +1,4 @@
-module common.model {
+module bwk.common.model {
   export interface IRotation {
 
     alpha: number;

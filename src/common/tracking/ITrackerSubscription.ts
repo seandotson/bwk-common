@@ -1,5 +1,5 @@
 
-module common.tracking {
+module bwk.common.tracking {
 
 
   export interface ITrackerSubscription {

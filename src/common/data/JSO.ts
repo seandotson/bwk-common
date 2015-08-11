@@ -1,7 +1,7 @@
 /// <reference path="../Cycle.ts"/>
 
 
-module common.data {
+module bwk.common.data {
 
 
   export class JSOOptions {

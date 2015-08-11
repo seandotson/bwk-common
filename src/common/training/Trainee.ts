@@ -1,4 +1,4 @@
-module common.training {
+module bwk.common.training {
   export class Trainee {
 
 

@@ -1,4 +1,4 @@
-module common {
+module bwk.common {
   export class Connection {
 
     socket: any;

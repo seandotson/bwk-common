@@ -1,4 +1,4 @@
-module common.data {
+module bwk.common.data {
 
   export class Randy<T> {
 

@@ -2,7 +2,7 @@
 
 
 
-module common.data {
+module bwk.common.data {
 
 
 

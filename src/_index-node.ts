@@ -17,4 +17,4 @@ var ArrayObserver = obs.ArrayObserver;
 
 
 // export the root domain names (modules)
-module.exports.common = common;
+module.exports.common = bwk.common;

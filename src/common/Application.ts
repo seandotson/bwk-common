@@ -1,4 +1,4 @@
-module common {
+module bwk.common {
   export class Application {
 
     //managers: { [id: string]: Manager };

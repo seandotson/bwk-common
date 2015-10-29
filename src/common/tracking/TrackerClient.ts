@@ -5,11 +5,13 @@ module bwk.common.tracking {
     id: string;
     trackId: string;
 
+    notifyPathFn: (path:string,value:any)=>void;
 
 
-    constructor(connection: common.Connection, id: string) {
+    constructor(connection: common.Connection, id: string, notifyPathFn: (path:string,value:any)=>void) {
       this.connection = connection;
       this.id = id;
+      this.notifyPathFn = notifyPathFn;
     }
 
 
@@ -71,6 +73,8 @@ module bwk.common.tracking {
               // resolve the big function
               resolve(Promise.resolve(model));
 
+              me.notifyPathFn('', model);
+
             });
 
             connection.on(trackId + '.change', function(pkg) {
@@ -90,6 +94,8 @@ module bwk.common.tracking {
 
               // implement the change
               var node, i, j, k, splice, spliceArgs, item;
+
+              var path = pkg.path;
 
               node = evalPath(pkg.path);
 
@@ -116,6 +122,9 @@ module bwk.common.tracking {
 
                 }
 
+                // gotta do this now
+                me.notifyPathFn(pkg.path, node);
+
               }
               else if (pkg.type === 'object') {
                 // modified
@@ -126,6 +135,8 @@ module bwk.common.tracking {
                       item = deRef(item);
                     }
                     node[k] = item;
+                    // gotta do this now
+                    me.notifyPathFn(path ? path + '.' + k : k, item);
                   }
                 }
                 // added
@@ -136,6 +147,8 @@ module bwk.common.tracking {
                       item = deRef(item);
                     }
                     node[k] = item;
+                    // gotta do this now
+                    me.notifyPathFn(path ? path + '.' + k : k, item);
                   }
                 }
                 // removed
@@ -143,10 +156,12 @@ module bwk.common.tracking {
                   if (pkg.removed.hasOwnProperty(k)) {
                     item = pkg.removed[k];
                     delete node[k];
+                    // gotta do this now
+                    me.notifyPathFn(path ? path + '.' + k : k, undefined);
                   }
                 }
-              }
 
+              }
 
             });
 

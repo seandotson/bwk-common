@@ -10,22 +10,25 @@
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true
     },
+    "buildOnSave": false,
+    "compileOnSave": false,
     "filesGlob": [
         "./**/*.ts",
         "!./node_modules/**/*.ts"
     ],
     "files": [
+        "./_index.ts",
         "./Application.ts",
         "./Connection.ts",
         "./Cycle.ts",
-        "./Manager.ts",
-        "./Util.ts",
-        "./_index.ts",
+        "./data/_index.ts",
         "./data/JSO.ts",
         "./data/ObjectMap.ts",
+        "./data/OrderedSet.ts",
         "./data/Randy.ts",
         "./data/TemporalCache.ts",
-        "./data/_index.ts",
+        "./Manager.ts",
+        "./model/_index.ts",
         "./model/IAcceleration.ts",
         "./model/IClientSession.ts",
         "./model/IGeoCoords.ts",
@@ -34,15 +37,15 @@
         "./model/IPublicSession.ts",
         "./model/IRotation.ts",
         "./model/IServerSession.ts",
-        "./model/_index.ts",
+        "./tracking/_index.ts",
         "./tracking/ITrackerSubscription.ts",
         "./tracking/ITrackerSubscriptionInfo.ts",
         "./tracking/Tracker.ts",
         "./tracking/TrackerClient.ts",
         "./tracking/TrackerServer.ts",
-        "./tracking/_index.ts",
+        "./training/_index.ts",
         "./training/Trainee.ts",
         "./training/Trainer.ts",
-        "./training/_index.ts"
+        "./Util.ts"
     ]
 }

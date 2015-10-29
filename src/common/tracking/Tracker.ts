@@ -57,7 +57,9 @@ module bwk.common.tracking {
       }
 
       function concatPath(path, key) {
-        return path + '["' + key + '"]';
+        //return path + '["' + key + '"]';
+        // fixed this for new polymer binding strategy.  keep on lookout for problems.
+        return path + '.' + key;
       }
 
       function handleArrayChange(item, path, splices) {

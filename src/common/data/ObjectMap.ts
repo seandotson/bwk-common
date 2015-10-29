@@ -1,10 +1,4 @@
-
-
-
-
 module bwk.common.data {
-
-
 
   export class ObjectMap<K, V> {
 

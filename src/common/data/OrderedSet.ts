@@ -54,6 +54,10 @@ module bwk.common.data {
       return promise;
     }
 
+    getCount() : number {
+      return this.list.length;
+    }
+
 
   }
 }

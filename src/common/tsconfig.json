@@ -46,6 +46,10 @@
         "./training/_index.ts",
         "./training/Trainee.ts",
         "./training/Trainer.ts",
+        "./typedEvents/_index.ts",
+        "./typedEvents/Event.ts",
+        "./typedEvents/EventChannel.ts",
+        "./typedEvents/EventDispatcher.ts",
         "./Util.ts"
     ]
 }

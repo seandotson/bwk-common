@@ -1,6 +1,7 @@
 
 /// <reference path="Cycle.ts"/>
 /// <reference path="Util.ts"/>
+/// <reference path="typedEvents/_index.ts"/>
 /// <reference path="data/_index.ts"/>
 /// <reference path="model/_index.ts"/>
 /// <reference path="tracking/_index.ts"/>
